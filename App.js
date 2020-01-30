@@ -10,6 +10,7 @@ app.get("/test", (request, response) => {
 });
 
 app.get("/test/:name/:age", (request, response) => {
+    console.log(request.query);
   response.send(request.params.name + " : " + request.params.age)
 });
 
